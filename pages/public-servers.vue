@@ -15,7 +15,7 @@
       >
         <template slot="items" slot-scope="props">
           <td>
-            <v-dialog v-model="dialog" width="600">
+            <v-dialog width="600">
               <template v-slot:activator="{ on }">
                 <v-badge>
                   <span v-on="on" class="server-name">{{
