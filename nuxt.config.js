@@ -1,7 +1,11 @@
 const path = require("path");
 
 module.exports = {
-  plugins: ["~plugins/vuetify.js", "~plugins/ymap.js"],
+  plugins: [
+    "~plugins/vuetify.js",
+    "~plugins/ymap.js",
+    { src: "~plugins/animations.js", ssr: false },
+  ],
   modules: ["@nuxtjs/markdownit", "@nuxtjs/sitemap"],
 
   target: 'static',

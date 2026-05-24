@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar fixed dark class="modern-toolbar" height="70">
+  <v-toolbar fixed dark :class="['modern-toolbar', { 'modern-toolbar--scrolled': scrolled }]" height="70">
     <v-toolbar-title>
       <v-btn flat class="nav-logo-btn" nuxt to="/">
         <img src="~/assets/dnscrypt-small.png" alt="DNSCrypt" height="42" />
@@ -57,6 +57,26 @@
     </v-btn>
   </v-toolbar>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      scrolled: false,
+    };
+  },
+  mounted() {
+    this._onScroll = () => {
+      this.scrolled = window.scrollY > 50;
+    };
+    window.addEventListener("scroll", this._onScroll, { passive: true });
+    this._onScroll();
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this._onScroll);
+  },
+};
+</script>
 
 <style lang="stylus" scoped>
 .modern-toolbar

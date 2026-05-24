@@ -2,15 +2,18 @@
   <div class="home-page">
     <!-- Hero Section -->
     <section class="hero-section">
+      <div class="hero-blob hero-blob--1"></div>
+      <div class="hero-blob hero-blob--2"></div>
+      <div class="hero-blob hero-blob--3"></div>
       <div class="hero-content">
-        <img class="hero-logo" src="../assets/dnscrypt.png" alt="DNSCrypt" />
+        <img class="hero-logo hero-logo--float" src="../assets/dnscrypt.png" alt="DNSCrypt" />
         <h1>Secure Your DNS</h1>
         <p class="hero-subtitle">
           DNSCrypt encrypts, authenticates and optionally anonymizes communications
           between your DNS client and resolver. It prevents DNS spoofing with
           cryptographic signatures to verify responses haven't been tampered with.
         </p>
-        <v-btn class="primary cta-button" large nuxt to="/implementations">
+        <v-btn class="primary cta-button cta-button--glow" large nuxt to="/implementations">
           Get Started
         </v-btn>
       </div>
@@ -24,7 +27,7 @@
       </div>
 
       <v-layout row wrap>
-        <v-flex xs12 sm6 lg4 pa-3>
+        <v-flex xs12 sm6 lg4 pa-3 v-animate.fade-up="0">
           <v-card class="feature-card" height="100%">
             <v-card-text>
               <div class="feature-icon">
@@ -40,7 +43,7 @@
           </v-card>
         </v-flex>
 
-        <v-flex xs12 sm6 lg4 pa-3>
+        <v-flex xs12 sm6 lg4 pa-3 v-animate.fade-up="100">
           <v-card class="feature-card" height="100%">
             <v-card-text>
               <div class="feature-icon">
@@ -56,7 +59,7 @@
           </v-card>
         </v-flex>
 
-        <v-flex xs12 sm6 lg4 pa-3>
+        <v-flex xs12 sm6 lg4 pa-3 v-animate.fade-up="200">
           <v-card class="feature-card" height="100%">
             <v-card-text>
               <div class="feature-icon">
@@ -71,7 +74,7 @@
           </v-card>
         </v-flex>
 
-        <v-flex xs12 sm6 lg4 pa-3>
+        <v-flex xs12 sm6 lg4 pa-3 v-animate.fade-up="300">
           <v-card class="feature-card" height="100%">
             <v-card-text>
               <div class="feature-icon">
@@ -86,7 +89,7 @@
           </v-card>
         </v-flex>
 
-        <v-flex xs12 sm6 lg4 pa-3>
+        <v-flex xs12 sm6 lg4 pa-3 v-animate.fade-up="400">
           <v-card class="feature-card" height="100%">
             <v-card-text>
               <div class="feature-icon">
@@ -101,7 +104,7 @@
           </v-card>
         </v-flex>
 
-        <v-flex xs12 sm6 lg4 pa-3>
+        <v-flex xs12 sm6 lg4 pa-3 v-animate.fade-up="500">
           <v-card class="feature-card" height="100%">
             <v-card-text>
               <div class="feature-icon">
@@ -121,7 +124,7 @@
     <!-- Info Section -->
     <section class="info-section">
       <v-layout row wrap>
-        <v-flex xs12 md6 pa-3>
+        <v-flex xs12 md6 pa-3 v-animate.fade-left="0">
           <v-card class="info-card" height="100%">
             <v-card-text>
               <h3>History</h3>
@@ -134,7 +137,7 @@
           </v-card>
         </v-flex>
 
-        <v-flex xs12 md6 pa-3>
+        <v-flex xs12 md6 pa-3 v-animate.fade-right="200">
           <v-card class="info-card" height="100%">
             <v-card-text>
               <h3>Anonymized DNS</h3>
@@ -150,7 +153,7 @@
     </section>
 
     <!-- Community Section -->
-    <section class="community-section">
+    <section class="community-section" v-animate.scale-in="0">
       <v-card class="community-card">
         <v-card-text class="text-xs-center">
           <h3>Join the Community</h3>
