@@ -23,7 +23,7 @@
         <v-list-tile nuxt to="/faq">
           <v-list-tile-title>FAQ</v-list-tile-title>
         </v-list-tile>
-        <v-list-tile nuxt to="/protocol">
+        <v-list-tile href="https://datatracker.ietf.org/doc/draft-denis-dprive-dnscrypt/">
           <v-list-tile-title>Protocol</v-list-tile-title>
         </v-list-tile>
         <v-list-tile nuxt to="/stamps">
@@ -43,7 +43,7 @@
       <v-btn flat nuxt to="/public-servers">Servers</v-btn>
       <v-btn flat nuxt to="/map">Map</v-btn>
       <v-btn flat nuxt to="/faq">FAQ</v-btn>
-      <v-btn flat nuxt to="/protocol">Protocol</v-btn>
+      <v-btn flat href="https://datatracker.ietf.org/doc/draft-denis-dprive-dnscrypt/">Protocol</v-btn>
       <v-btn flat nuxt to="/stamps">DNS Stamps</v-btn>
       <v-btn flat href="https://status.dnscrypt.info/">Status</v-btn>
     </v-toolbar-items>

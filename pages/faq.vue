@@ -75,7 +75,7 @@ Unfortunately, [DNSSEC has received limited adoption](https://labs.ripe.net/Memb
 * <v-icon color=green>thumb_up</v-icon> Built-in query padding
 * <v-icon color=green>thumb_up</v-icon> Multiple crypto suites (including X25519, Ed25519)
 * <v-icon color=green>thumb_up</v-icon> Extensible without requiring cross-layer redesigns
-* <v-icon color=green>thumb_up</v-icon> A prototype using post-quantum cryptography is available
+* <v-icon color=green>thumb_up</v-icon> Supports post-quantum cryptography
 * <v-icon color=green>thumb_up</v-icon> Has a complete specification since 2013
 * <v-icon color=green>thumb_up</v-icon> Battle tested since 2011
 * <v-icon color=red>thumb_down</v-icon> The <a href="https://datatracker.ietf.org/doc/draft-denis-dprive-dnscrypt/">RFC</a> is still a work in progress
